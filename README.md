@@ -12,4 +12,6 @@ If and when the database throws errors or features don't work as intended, GitHu
 
 ## Common errors
 
-Nothing to put here currently (thankfully), although I'm sure that will change soon.
+**Run-time error 3044** - ensure you have removed preexisting linked tables from the 'Linked Table Manager' in the 'External Data' tab - click [here](https://github.com/bamiesking/st-margaret/wiki/Removing-linked-tables) and follow the steps.
+
+**Run-time error 2501** - redownload the latest release from [here](https://github.com/bamiesking/st-margaret/releases) and follow the steps [here](https://github.com/bamiesking/st-margaret/wiki/Getting-started) to link it to your local back-end. If the error still arises, open an issue [here](https://github.com/bamiesking/st-margaret/issues/new).
