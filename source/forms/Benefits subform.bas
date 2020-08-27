@@ -10,17 +10,18 @@ Begin Form
     GridY =10
     Width =10209
     DatasheetFontHeight =11
-    ItemSuffix =11
-    Left =10905
-    Top =5610
-    Right =20490
-    Bottom =9105
+    ItemSuffix =8
+    Left =5910
+    Top =7665
+    Right =16410
+    Bottom =10455
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
-        0x8184d82a2d6de540
+        0x27e925c77484e540
     End
-    RecordSource ="Course Enrolment"
-    Caption ="Course Enrolment subform"
+    RecordSource ="SELECT [Benefits].[Benefit], [Benefits].[Service User], [Benefits].[Date], [Bene"
+        "fits].[Notes] FROM Benefits; "
+    Caption ="Benefits subform"
     DatasheetFontName ="Calibri"
     FilterOnLoad =0
     ShowPageMargins =0
@@ -95,14 +96,58 @@ Begin Form
             BackTint =20.0
         End
         Begin Section
-            Height =3192
+            Height =2793
             Name ="Detail"
-            AutoHeight =255
+            AutoHeight =1
             AlternateBackColor =15921906
             AlternateBackThemeColorIndex =1
             AlternateBackShade =95.0
             BackThemeColorIndex =1
             Begin
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =1440
+                    Left =2892
+                    Top =342
+                    Width =3660
+                    Height =330
+                    ColumnWidth =3000
+                    BorderColor =10921638
+                    ForeColor =3484194
+                    ColumnInfo ="\"\";\"\";\"10\";\"510\""
+                    Name ="Benefit"
+                    ControlSource ="Benefit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Benefits Types].[Benefit Type] FROM [Benefits Types] ORDER BY [Benefit T"
+                        "ype]; "
+                    ColumnWidths ="1440"
+                    GridlineColor =10921638
+
+                    LayoutCachedLeft =2892
+                    LayoutCachedTop =342
+                    LayoutCachedWidth =6552
+                    LayoutCachedHeight =672
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2460
+                            Height =330
+                            BorderColor =8355711
+                            ForeColor =8355711
+                            Name ="Benefit_Label"
+                            Caption ="Benefit"
+                            GridlineColor =10921638
+                            LayoutCachedLeft =342
+                            LayoutCachedTop =342
+                            LayoutCachedWidth =2802
+                            LayoutCachedHeight =672
+                        End
+                    End
+                End
                 Begin TextBox
                     OverlapFlags =85
                     IMESentenceMode =3
@@ -110,13 +155,13 @@ Begin Form
                     Top =1140
                     Width =1620
                     Height =330
-                    ColumnWidth =1770
-                    ColumnOrder =2
+                    ColumnWidth =1620
+                    TabIndex =1
                     BorderColor =10921638
                     ForeColor =4210752
-                    Name ="Enrolment Date"
-                    ControlSource ="Enrolment Date"
-                    EventProcPrefix ="Enrolment_Date"
+                    Name ="Date"
+                    ControlSource ="Date"
+                    Format ="Short Date"
                     GridlineColor =10921638
 
                     LayoutCachedLeft =2892
@@ -132,9 +177,8 @@ Begin Form
                             Height =330
                             BorderColor =8355711
                             ForeColor =8355711
-                            Name ="Enrolment Date_Label"
-                            Caption ="Enrolment Date"
-                            EventProcPrefix ="Enrolment_Date_Label"
+                            Name ="Date_Label"
+                            Caption ="Date"
                             GridlineColor =10921638
                             LayoutCachedLeft =342
                             LayoutCachedTop =1140
@@ -144,57 +188,15 @@ Begin Form
                     End
                 End
                 Begin TextBox
-                    OverlapFlags =85
-                    IMESentenceMode =3
-                    Left =2892
-                    Top =1539
-                    Width =1620
-                    Height =330
-                    ColumnWidth =1935
-                    ColumnOrder =3
-                    TabIndex =1
-                    BorderColor =10921638
-                    ForeColor =4210752
-                    Name ="Completion Date"
-                    ControlSource ="Completion Date"
-                    EventProcPrefix ="Completion_Date"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =2892
-                    LayoutCachedTop =1539
-                    LayoutCachedWidth =4512
-                    LayoutCachedHeight =1869
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =342
-                            Top =1539
-                            Width =2460
-                            Height =330
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="Completion Date_Label"
-                            Caption ="Completion Date"
-                            EventProcPrefix ="Completion_Date_Label"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =342
-                            LayoutCachedTop =1539
-                            LayoutCachedWidth =2802
-                            LayoutCachedHeight =1869
-                        End
-                    End
-                End
-                Begin TextBox
                     EnterKeyBehavior = NotDefault
                     ScrollBars =2
                     OverlapFlags =85
                     IMESentenceMode =3
                     Left =2892
-                    Top =1938
+                    Top =1539
                     Width =7260
                     Height =1140
-                    ColumnWidth =3735
-                    ColumnOrder =4
+                    ColumnWidth =3000
                     TabIndex =2
                     BorderColor =10921638
                     ForeColor =4210752
@@ -204,14 +206,14 @@ Begin Form
                     TextFormat =1
 
                     LayoutCachedLeft =2892
-                    LayoutCachedTop =1938
+                    LayoutCachedTop =1539
                     LayoutCachedWidth =10152
-                    LayoutCachedHeight =3078
+                    LayoutCachedHeight =2679
                     Begin
                         Begin Label
                             OverlapFlags =85
                             Left =342
-                            Top =1938
+                            Top =1539
                             Width =2460
                             Height =330
                             BorderColor =8355711
@@ -220,57 +222,9 @@ Begin Form
                             Caption ="Notes"
                             GridlineColor =10921638
                             LayoutCachedLeft =342
-                            LayoutCachedTop =1938
+                            LayoutCachedTop =1539
                             LayoutCachedWidth =2802
-                            LayoutCachedHeight =2268
-                        End
-                    End
-                End
-                Begin ComboBox
-                    LimitToList = NotDefault
-                    AutoExpand = NotDefault
-                    AllowAutoCorrect = NotDefault
-                    OverlapFlags =85
-                    IMESentenceMode =3
-                    ColumnCount =2
-                    ListWidth =1440
-                    Left =2891
-                    Top =737
-                    Height =315
-                    ColumnWidth =1830
-                    ColumnOrder =1
-                    TabIndex =3
-                    BorderColor =10921638
-                    ForeColor =3484194
-                    ColumnInfo ="\"\";\"\";\"\";\"\";\"10\";\"510\""
-                    Name ="Course"
-                    ControlSource ="Course"
-                    RowSourceType ="Table/Query"
-                    RowSource ="SELECT [Activities].[ID], [Activities].[Activity Name] FROM Activities ORDER BY "
-                        "[Activity Name]; "
-                    ColumnWidths ="0;1440"
-                    GridlineColor =10921638
-
-                    LayoutCachedLeft =2891
-                    LayoutCachedTop =737
-                    LayoutCachedWidth =4592
-                    LayoutCachedHeight =1052
-                    Begin
-                        Begin Label
-                            OverlapFlags =85
-                            Left =340
-                            Top =737
-                            Width =2490
-                            Height =315
-                            BorderColor =8355711
-                            ForeColor =8355711
-                            Name ="Label10"
-                            Caption ="Course"
-                            GridlineColor =10921638
-                            LayoutCachedLeft =340
-                            LayoutCachedTop =737
-                            LayoutCachedWidth =2830
-                            LayoutCachedHeight =1052
+                            LayoutCachedHeight =1869
                         End
                     End
                 End
