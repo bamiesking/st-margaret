@@ -10,8 +10,8 @@ Begin Form
     Width =6519
     DatasheetFontHeight =11
     ItemSuffix =12
-    Right =7058
-    Bottom =7125
+    Right =7065
+    Bottom =6270
     DatasheetGridlinesColor =15132391
     RecSrcDt = Begin
         0x201f1b7b7064e540
@@ -186,10 +186,10 @@ Begin Form
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =1
-                    WebImagePaddingLeft =4
-                    WebImagePaddingTop =4
-                    WebImagePaddingRight =3
-                    WebImagePaddingBottom =3
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
                 End
                 Begin CommandButton
                     OverlapFlags =85
@@ -217,10 +217,10 @@ Begin Form
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =2
-                    WebImagePaddingLeft =4
-                    WebImagePaddingTop =4
-                    WebImagePaddingRight =3
-                    WebImagePaddingBottom =3
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
                 End
                 Begin Image
                     PictureType =2
@@ -314,10 +314,10 @@ Begin Form
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =3
-                    WebImagePaddingLeft =4
-                    WebImagePaddingTop =4
-                    WebImagePaddingRight =3
-                    WebImagePaddingBottom =3
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
                 End
                 Begin CommandButton
                     OverlapFlags =85
@@ -345,10 +345,10 @@ Begin Form
                     HoverForeColor =4210752
                     PressedForeColor =4210752
                     GroupTable =4
-                    WebImagePaddingLeft =4
-                    WebImagePaddingTop =4
-                    WebImagePaddingRight =3
-                    WebImagePaddingBottom =3
+                    WebImagePaddingLeft =2
+                    WebImagePaddingTop =2
+                    WebImagePaddingRight =1
+                    WebImagePaddingBottom =1
                 End
                 Begin Label
                     OverlapFlags =85
