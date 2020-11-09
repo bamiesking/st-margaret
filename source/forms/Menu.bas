@@ -7,7 +7,7 @@ Begin Form
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =6519
+    Width =6526
     DatasheetFontHeight =11
     ItemSuffix =12
     Right =7065
@@ -354,17 +354,17 @@ Begin Form
                     OverlapFlags =85
                     Left =5896
                     Top =113
-                    Width =508
-                    Height =285
+                    Width =630
+                    Height =315
                     BorderColor =8355711
                     ForeColor =8355711
                     Name ="Label8"
-                    Caption ="v0.2"
+                    Caption ="v0.2.1"
                     GridlineColor =10921638
                     LayoutCachedLeft =5896
                     LayoutCachedTop =113
-                    LayoutCachedWidth =6404
-                    LayoutCachedHeight =398
+                    LayoutCachedWidth =6526
+                    LayoutCachedHeight =428
                 End
                 Begin Label
                     FontUnderline = NotDefault
